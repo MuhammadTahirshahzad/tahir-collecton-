@@ -1,0 +1,30 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<form method="get" action="/Home/Form">
+    <input type="text" placeholder="enter your name "  name="fname"; />
+      <input type="text" placeholder="enter your last name "  name="lname"; />
+        <input type="email" placeholder="enter your email "  name="email"; />
+        
+      <input type="text" placeholder="enter your phone number "  name="phone"; />
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">male</label>
+       <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">female</label>
+      <label for="department">choose department</label>
+    <select name="department" id="department">
+        <option value="sales">Sales</option>
+         <option value="it">IT</option>
+
+    </select>
+    <br />
+    <textarea id="message" name="message" rows="4" cols="50">
+
+    </textarea>
+    <br />
+    <input type="submit" />
+    @ViewBag.message
+
+        </form>
